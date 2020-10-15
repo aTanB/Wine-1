@@ -15,9 +15,9 @@ jobs:
         run: |
 
           # Your ML workflow goes here
-          apt update && apt install -y python3-setuptools npm 
+          apt update && apt install -y python3-setuptools 
           npm i -g @dvcorg/cml
-          npm install -g vega-cli vega-lite
+          # npm install -g vega-cli vega-lite
           pip3 install -r requirements.txt
           python3 train.py
           
